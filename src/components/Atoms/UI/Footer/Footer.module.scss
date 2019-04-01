@@ -1,0 +1,29 @@
+@import '../../../../styles/variables';
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: $small-font-size;
+  font-weight: bold;
+  color: #000000;
+  
+  // 1000px
+  @media only screen and (max-width: 62.5em) {
+    font-size: $normal-font-size;
+  }
+
+  &__Icon {
+    display: block;
+    height: $small-font-size;
+    
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      height: $normal-font-size;
+    }
+  }
+}

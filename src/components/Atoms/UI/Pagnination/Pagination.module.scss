@@ -1,0 +1,97 @@
+@import '../../../../styles/variables';
+
+.Pagination {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 4rem;
+  
+  // 1100px
+  @media only screen and (max-width: 68.75em) {
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+    margin-left: auto;
+    margin-right: 5rem;
+  }
+  
+  
+  // 600px
+  @media only screen and (max-width: 37.5em) {
+    position: absolute;
+    top: initial;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin-right: 0;    
+  }
+  
+  // 500px
+  @media only screen and (max-width: 31.25em) {
+    bottom: 50%;
+  }
+  
+  &__Input {
+    display: block;
+    border: 0;
+    outline: 0;
+    width: 4rem;
+    text-align: center;
+    color: $green-dark;
+    font-size: $small-font-size;
+    
+    // 1300px
+    @media only screen and (max-width: 81.25em) {
+      font-size: $normal-font-size;
+    }
+    
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      font-size: $medium-font-size;
+    }
+  }
+
+  &__Arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    fill: $green-dark;
+    
+    // 1300px
+    @media only screen and (max-width: 81.25em) {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &_left {
+      right: 100%;
+      transform: translate(-50%, -50%);
+      
+      // 400px
+      @media only screen and (max-width: 25em) {
+        right: 75%;
+      }
+    }
+
+    &_right {
+      left: 100%;
+      transform: translate(50%, -50%) rotateZ(180deg);
+      
+      // 400px
+      @media only screen and (max-width: 25em) {
+        left: 75%;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../../styles/variables';
+
+.CloseButton {
+  display: block;
+  cursor: pointer;
+  
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  top: 10%;
+  right: 2.5%;
+  z-index: 100;
+  
+  // 800px
+  @media only screen and (max-width: 50em) {
+    top: $nav-height*1.5;
+    transform: translate(0, -50%);
+  }
+  
+  &:hover &__Path {
+    fill: $green-light;
+  }
+  
+  &__Path {
+    transition: all 300ms ease-out;
+    fill: $green-dark;
+  }
+}

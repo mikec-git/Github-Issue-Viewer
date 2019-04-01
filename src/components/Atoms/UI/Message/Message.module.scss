@@ -1,0 +1,88 @@
+@import '../../../../styles/variables';
+
+.Message {
+  position: relative;
+  display: block;
+  padding: 1.75rem 7.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: -1.25rem 1rem 2rem rgba(0, 0, 0, .3);
+  width: 45vw;
+  transition: all 300ms ease-out;
+
+  @media only screen and (max-width: 50em) {
+    width: 75vw;
+    padding: 2rem 5rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 85vw;
+  }
+  
+  &__Text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    
+    @media only screen and (max-width: 31.25em) {
+      width: auto;
+    }
+  }
+
+  &_success {
+    background-color: #69f0ae;
+    color: #1b5e20;
+  }
+
+  &_warning {
+    background-color: #fff59d;
+    color: #f57f17;
+  }
+  
+  &_danger {
+    background-color: #ef9a9a;
+    color: #b71c1c;
+  }
+
+  &__Close {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.3rem;
+    transition: all 200ms ease-out;
+    fill: $green-dark;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &_appear {
+    opacity: 0;
+  }
+  
+  &_appear_active {
+    opacity: 1;
+  }
+  
+  &_enter_done {
+    opacity: 1;
+  }
+  
+  &_exit {
+    opacity: 1;
+  }
+  
+  &_exit_active {
+    opacity: 1;
+  }
+  
+  &_exit_done {
+    opacity: 0;
+  }
+}

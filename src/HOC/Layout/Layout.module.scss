@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.Layout {
+  background-color: $pink-light;
+
+  &__Message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10000;
+  }
+}

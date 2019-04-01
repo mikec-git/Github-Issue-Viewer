@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+
+.List {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: $gray-light;
+  min-height: 100vh;
+  transition: all 300ms ease-out;
+  z-index: 10;
+
+  &__NoIssues {
+    display: block; 
+    color: $pink-light;
+    font-size: $large-font-size;
+    text-transform: uppercase;
+  }
+  
+  &__Body {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    padding: 10% 0;
+    
+    & > * {
+      padding: 0 10%;
+      
+      // 1300px
+      @media only screen and (max-width: 81.25em) {
+        padding: 0 7.5%;
+      }
+
+      // 1000px
+      @media only screen and (max-width: 62.5em) {
+        padding: 0 5%;
+      }
+    }
+  }
+
+  &__Categories {
+    position: sticky;    
+    left: 0;
+    top: $nav-height;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: rgba($gray-light, .95);
+    padding: $nav-height/3 10%;
+    margin-bottom: 2rem;
+    z-index: 1000;
+    
+    
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      padding: $nav-height/2 6% $nav-height;      
+      justify-content: space-evenly;
+    }
+    
+    // 500px
+    @media only screen and (max-width: 31.25em) {
+      padding: $nav-height/3 0%;
+    }
+  }
+  
+  &_enter {
+    opacity: 0;
+  }
+  
+  &_enterActive {
+    opacity: 1;
+  }
+  
+  &_enterDone {
+    opacity: 1;      
+  }
+
+  &_exit {
+    opacity: 1;
+  }
+
+  &_exitActive {
+    opacity: 0;
+  }
+
+  &_exitDone {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+
+.State {  
+  display: inline-block;
+  z-index: 10;
+  width: 1.15rem;
+  height: auto;
+  
+  &_icon {
+    display: inline-block;
+    fill: $gray-dark;
+  }
+}

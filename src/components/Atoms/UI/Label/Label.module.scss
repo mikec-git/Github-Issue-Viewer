@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+
+.Label {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  padding: .35rem .5rem .35rem 1.25rem;
+  
+  // 600px
+  @media only screen and (max-width: 37.5em) {
+    padding: .75rem .5rem .75rem 1.25rem;
+  }
+  
+  &__Text {
+    background: inherit;
+    color: transparent;
+    background-clip: text;
+    font-size: $tiny-font-size;
+    font-weight: bold;
+    white-space: nowrap;
+    filter: grayscale(1) contrast(5) invert(1);
+    
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      font-size: $small-font-size;
+    }
+
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      font-size: $normal-font-size;
+      letter-spacing: $tiny-letter-spacing;
+      font-weight: normal;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: .55rem;
+    width: 4px;
+    height: 4px;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background: $gray-light;
+  }
+}

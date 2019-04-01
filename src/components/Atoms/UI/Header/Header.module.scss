@@ -1,0 +1,23 @@
+@import '../../../../styles/variables';
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: block;
+  height: $nav-height;
+  width: 100%;
+  background: $pink-light;  
+  box-shadow: 0 1rem 1.5rem -5px rgba($color: #000000, $alpha: .4);
+
+  &__Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    margin-left: 2.5%;
+  }
+}

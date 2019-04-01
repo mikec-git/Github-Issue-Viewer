@@ -1,0 +1,35 @@
+@import '../../../../styles/variables';
+
+.Title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  
+  &__Landing {
+    font-size: $huge-font-size;
+    letter-spacing: $medium-letter-spacing;
+    margin-bottom: 1rem;
+  }
+  
+  &__Header {
+    font-size: $medium-font-size;
+    
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      font-size: $large-font-size;
+    }
+  }
+  
+  &__List {
+    word-wrap: break-word;
+    font-size: $normal-font-size;
+    font-weight: normal;
+    height: 100%;
+    
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      font-size: $medium-font-size;
+    }
+  }
+}

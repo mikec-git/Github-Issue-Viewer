@@ -1,0 +1,7 @@
+export const GET_ISSUES = 'GET_ISSUES';
+export const GET_ISSUES_INIT = 'GET_ISSUES_INIT';
+export const GET_ISSUES_SUCCESS = 'GET_ISSUES_SUCCESS';
+export const GET_ISSUES_FAIL = 'GET_ISSUES_FAIL';
+
+export const CLEAR_ISSUES = 'CLEAR_ISSUES';
+export const CLEAR_MESSAGE = 'CLEAR_MESSAGE';
