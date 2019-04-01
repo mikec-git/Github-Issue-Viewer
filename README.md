@@ -42,6 +42,7 @@ Enjoy! :)
 - [SASS/SCSS](https://sass-lang.com/) - CSS Pre-Processor
 - [React Transition Group](https://reactcommunity.org/react-transition-group/) - Animations for components
 - [Axios](https://github.com/axios/axios) - XMLHttpRequest Library
+- [Query String](https://github.com/sindresorhus/query-string) - Library to make parsing URL query strings easier
 
 **APIs**
 - [GitHub Issue API](https://developer.github.com/v3/issues/) - Database containing issues for GitHub repos
