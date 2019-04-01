@@ -3,6 +3,7 @@ This is a React app that allows users to browse any outstanding issues (open/clo
 
 ## Contributor
 Mike Choi - Developer
+
 Axiom Zen - Design
 
 ## Getting Started
